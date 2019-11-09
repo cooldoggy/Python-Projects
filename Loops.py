@@ -1,0 +1,3 @@
+for counter in range(1,11):
+	print('Emma\'s Room - Keep Out!!!')
+print('We all smell like poo.')
