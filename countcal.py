@@ -16,6 +16,7 @@ def days_between_dates(date1, date2):
     number_of_days = time_between.split(' ')
     return number_of_days[0]
 root = Tk()
+root.title("Countdown Calendar")
 c = Canvas(root, width = 800, height = 800, bg = 'grey')
 c.pack()
 c.create_text(100, 50, anchor='w', fill = 'green', font = '"Comic Sans MS" 28 bold underline', text = 'My Countdown Calendar')
