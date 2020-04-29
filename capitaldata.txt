@@ -6,3 +6,5 @@ China/Beijing
 France/Paris
 Argentina/Buenos Aires
 Egypt/Cairo
+Sweden/Stockholm
+Germany/Berlin
