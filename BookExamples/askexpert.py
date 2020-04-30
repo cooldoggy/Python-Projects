@@ -21,6 +21,7 @@ while True:
         messagebox.showinfo('Answer', 'The capital city of ' + query_country + ' is ' + result + '.')
     else:
         new_city = simpledialog.askstring('Teach Me!', "I don't know! " + "What is the capital city of " + query_country + '?')
+        new_city = new_city.capitalize()
         the_world[query_country] = new_city
         writetofile(query_country, new_city)
         messagebox.showinfo('Thanks!', "Ok! The capital city of " + query_country + " is " + new_city + ".")

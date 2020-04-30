@@ -8,3 +8,6 @@ Argentina/Buenos Aires
 Egypt/Cairo
 Sweden/Stockholm
 Germany/Berlin
+Russia/Moscow
+Ireland/Dublin
+Italy/Rome
