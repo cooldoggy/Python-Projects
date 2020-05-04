@@ -1,5 +1,4 @@
 from tkinter import messagebox, simpledialog, Tk
-from frandom import choice
 import sys
 def get_task():
     task = simpledialog.askstring('Task?', 'Encrypt or Decrypt?')
