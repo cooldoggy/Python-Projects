@@ -1,4 +1,5 @@
 from tkinter import Tk, simpledialog, messagebox
+import sys
 def readfromfile():
     with open('capitaldata.txt') as file:
         for line in file:
@@ -14,6 +15,8 @@ the_world={}
 readfromfile()
 while True:
     query_country= simpledialog.askstring('Ask the Expert!- Capital Cities', "Type the name of a country:")
+    if query_country == None:
+    	sys.exit()
     query_country=query_country.capitalize()
 
     if query_country in the_world:
