@@ -75,6 +75,7 @@ c.configure(bg='dark blue', highlightthickness=0)
 #Drawing Code
 petcolors=['SkyBlue1', 'tomato','red', 'blue','green','purple','orange','yellow','indigo']
 c.body_color=random.choice(petcolors)
+c.tonguecolor= random.choice(petcolors)
 body=c.create_oval(35, 20, 365, 350,outline=c.body_color, fill=c.body_color)
 earleft = c.create_polygon(75, 90, 75, 10, 165, 70, outline=c.body_color, fill=c.body_color)
 earright= c.create_polygon(255,45,325,10,320,70, outline=c.body_color, fill=c.body_color)
@@ -87,8 +88,8 @@ pupilright=c.create_oval(240,145,250,155,outline='black', fill='black')
 mouthnormal=c.create_line(170,250,200,272,230,250, smooth=1,width=2 , state = NORMAL)
 mouthhappy=c.create_line(170,250,200,282,230,250, smooth=1, width=2, state=HIDDEN)
 mouthsad= c.create_line(170,250,200,232,230,250, smooth=1, width=2, state = HIDDEN)
-tonguemain=c.create_rectangle(170,250,230,290, outline='red', fill='red', state=HIDDEN)
-tonguetip=c.create_oval(170,285,230,300, outline='red', fill='red', state=HIDDEN)
+tonguemain=c.create_rectangle(170,250,230,290, outline=c.tonguecolor, fill=c.tonguecolor, state=HIDDEN)
+tonguetip=c.create_oval(170,285,230,300, outline=c.tonguecolor, fill=c.tonguecolor, state=HIDDEN)
 cheekleft= c.create_oval(70,180,120,230, outline = 'pink', fill= 'pink', state = HIDDEN)
 cheekright=c.create_oval(280,180,330,230, outline='pink', fill='pink', state=HIDDEN)
 
